@@ -59,7 +59,7 @@ const Filter = ({
   // Filter by region
 
   const filterRegions = async (region) => {
-    const url = `https://restcountries.herokuapp.com/api/v1/region/{region}`
+    const url = `https://restcountries.com/v3.1/region/africa`
     const res = await fetch(url)
     const data = await res.json()
     setCountries(data)
