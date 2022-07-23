@@ -9,7 +9,7 @@ const Country = () => {
   useEffect(() => {
     const fetchCountryData = async () => {
       const response = await fetch(
-        `https://restcountries.eu/rest/v2/name/${name}`
+        `https://restcountries.com/v2/all`
       )
       const country = await response.json()
       setCountry(country)
